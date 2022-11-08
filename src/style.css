@@ -30,7 +30,7 @@ body {
     background-image: var(--front);
 }
 
-#win{
+#win {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -56,6 +56,10 @@ body {
     width: 15vw;
     height: 25px;
     margin: auto;
+    border-radius: 5px;
+    background-color: #0077B6;
+    border-color: #0077B6;
+    color: #FFFFFF;
 }
 
 
