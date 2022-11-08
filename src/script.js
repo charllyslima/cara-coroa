@@ -1,6 +1,7 @@
 const button = document.querySelector('.button');
 const coin = document.querySelector('.coin');
 const root = document.querySelector(':root');
+const win = document.querySelector('#win');
 
 button.addEventListener('click', () => {
     coin.classList.add('coin-spin');
@@ -13,9 +14,11 @@ button.addEventListener('click', () => {
         if (rand % 2 === 0) {
             root.style.setProperty('--front', "url('./assets/img/02.png')");
             root.style.setProperty('--back', "url('./assets/img/01.png')");
+            win.innerText = 'Coroa Venceu!';
         } else {
             root.style.setProperty('--front', "url('./assets/img/01.png')");
             root.style.setProperty('--back', "url('./assets/img/02.png')");
+            win.innerText = 'Cara Venceu';
         }
     }, timeSpin);
 })
