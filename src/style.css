@@ -1,0 +1,63 @@
+:root {
+    --front: url('./assets/img/01.png');
+    --back: url('./assets/img/02.png');
+}
+
+body {
+    background-color: #bde0fe;
+}
+
+.game-board {
+    width: 80vw;
+    height: 80vh;
+    background-color: #a2d2ff;
+    position: absolute;
+    top: 10vh;
+    left: 10vw;
+}
+
+.coin {
+    margin: auto;
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    background-size: 150px 150px;
+    background-image: var(--front);
+}
+
+.coin-spin {
+    animation: ease-in-out .4s spin infinite;
+    animation-direction: alternate;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 250px;
+    width: 15vw;
+    height: 25px;
+    margin: auto;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+        background-image: var(--front);
+    }
+    50% {
+        transform: rotateY(180deg);
+        background-image: var(--back)
+    }
+    100% {
+        transform: rotateY(360deg);
+        background-image: var(--front);
+    }
+}
