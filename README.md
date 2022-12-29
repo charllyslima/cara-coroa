@@ -1,9 +1,9 @@
 # Coin Flip Game
 
 <div>
+    <img src="https://img.shields.io/badge/type-game-blue">
     <img src="https://img.shields.io/badge/difficulty-easy-brightgreen">
     <img src="https://img.shields.io/badge/tech-Javascript-yellow">
-    <img src="https://img.shields.io/badge/tag-game-blue">
 </div>
 
 Simple coin tail game made with pure Javascript. can be accessed [here](https://charllyslima.github.io/cara-coroa/src/).
